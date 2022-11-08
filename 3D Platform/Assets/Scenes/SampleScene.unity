@@ -2516,13 +2516,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248148026}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.0022617837, y: -0.014189705, z: 0.009910071, w: 0.99984765}
   m_LocalPosition: {x: 0.5077, y: -0.36, z: -6.1947}
   m_LocalScale: {x: 12.154358, y: -0.07095371, z: 12.633644}
   m_Children: []
   m_Father: {fileID: 1165503147}
   m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.275, y: -1.623, z: 1.132}
 --- !u!65 &1248148028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3930,6 +3930,7 @@ GameObject:
   - component: {fileID: 1783038353}
   - component: {fileID: 1783038352}
   - component: {fileID: 1783038357}
+  - component: {fileID: 1783038358}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -3949,7 +3950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6124f40df26324349ae2df73e5d0c5d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 0.5
+  maxSpeed: 10
   rotation: 0
   camRotation: 0
   rotationSpeed: 2
@@ -4048,6 +4049,65 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1783038358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783038351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601d4686cc0b70d45a98271d52094850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderSize: {x: 1, y: 2, z: 1}
+  weight: 75
+  rigidbodyPushForce: 2
+  solidCollider: 1
+  viewTransform: {fileID: 0}
+  playerRotationTransform: {fileID: 0}
+  crouchingHeightMultiplier: 0.5
+  crouchingSpeed: 10
+  crouchingEnabled: 1
+  slidingEnabled: 1
+  laddersEnabled: 1
+  supportAngledLadders: 1
+  useStepOffset: 0
+  stepOffset: 0.35
+  movementConfig:
+    autoBhop: 1
+    gravity: 20
+    jumpForce: 6.5
+    friction: 6
+    maxSpeed: 6
+    maxVelocity: 50
+    slopeLimit: 45
+    clampAirSpeed: 1
+    airCap: 0.4
+    airAcceleration: 12
+    airFriction: 0.4
+    walkSpeed: 7
+    sprintSpeed: 12
+    acceleration: 14
+    deceleration: 10
+    crouchSpeed: 4
+    crouchAcceleration: 8
+    crouchDeceleration: 4
+    crouchFriction: 3
+    minimumSlideSpeed: 9
+    maximumSlideSpeed: 18
+    slideSpeedMultiplier: 1.75
+    slideFriction: 14
+    downhillSlideSpeedMultiplier: 2.5
+    slideDelay: 0.5
+    swimUpSpeed: 12
+    underwaterSwimSpeed: 3
+    underwaterAcceleration: 6
+    underwaterDeceleration: 3
+    underwaterFriction: 2
+    underwaterGravity: 6
+    underwaterVelocityDampening: 2
 --- !u!1 &1965173404
 GameObject:
   m_ObjectHideFlags: 0
@@ -4074,13 +4134,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965173404}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.0002929587, y: -0.0009430976, z: -0.0012835095, w: 0.99999875}
   m_LocalPosition: {x: 0, y: -5.2, z: 0}
   m_LocalScale: {x: 2.6233506, y: 1.5631, z: 1.5631}
   m_Children: []
   m_Father: {fileID: 927603197}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.034, y: -0.108, z: -0.147}
 --- !u!64 &1965173406
 MeshCollider:
   m_ObjectHideFlags: 0
