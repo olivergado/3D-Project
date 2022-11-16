@@ -65,8 +65,6 @@ public class CPMPlayer : MonoBehaviour
 
     private void Start()
     {
-         cam = GameObject.Find("Main Camera");
-        myRigidbody = GetComponent<Rigidbody>();
         
         // Hide the cursor
         Cursor.visible = false;
