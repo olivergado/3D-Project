@@ -6,8 +6,10 @@ namespace Q3Movement
     /// This script handles Quake III CPM(A) mod style player movement logic.
     /// </summary>
     [RequireComponent(typeof(CharacterController))]
-    public class Q3PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
+
+
         [System.Serializable]
         public class MovementSettings
         {
@@ -279,5 +281,7 @@ namespace Q3Movement
             m_PlayerVelocity.x += accelspeed * targetDir.x;
             m_PlayerVelocity.z += accelspeed * targetDir.z;
         }
+       
+        
     }
 }
