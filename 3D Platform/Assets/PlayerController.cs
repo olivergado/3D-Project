@@ -2,9 +2,6 @@
 
 namespace Q3Movement
 {
-    /// <summary>
-    /// This script handles Quake III CPM(A) mod style player movement logic.
-    /// </summary>
     [RequireComponent(typeof(CharacterController))]
     public class PlayerController : MonoBehaviour
     {
@@ -60,8 +57,14 @@ namespace Q3Movement
         private Transform m_Tran;
         private Transform m_CamTran;
 
+        
+        
+
+
         private void Start()
         {
+           
+
             m_Tran = transform;
             m_Character = GetComponent<CharacterController>();
 
@@ -74,6 +77,8 @@ namespace Q3Movement
 
         private void Update()
         {
+
+            
             m_MoveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
             m_MouseLook.UpdateCursorLock();    
             QueueJump();
