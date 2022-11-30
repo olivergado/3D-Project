@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinBox : MonoBehaviour
+public class WinhBox : MonoBehaviour
 {
+    // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }
     }
 
