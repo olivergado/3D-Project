@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Respawn.unity
-    guid: ccdfbde5acef7974282984b0fca5920b
+    path: Assets/Scenes/Menu.unity
+    guid: 33799981b1976a64b80170285648d2e4
   - enabled: 1
     path: Assets/Scenes/Level.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 78aea8c36f3875645a73a8eeaa76af6f
+  - enabled: 1
+    path: Assets/Scenes/Respawn.unity
+    guid: ccdfbde5acef7974282984b0fca5920b
   m_configObjects: {}
