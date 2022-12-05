@@ -10,6 +10,8 @@ public class WinBox : MonoBehaviour
         if (other.tag == "Player")
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
         }
     }
 
