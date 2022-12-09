@@ -22,6 +22,11 @@ namespace Q3Movement
         private Quaternion m_CameraTargetRot;
         private bool m_cursorIsLocked = true;
 
+        void Start()
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         public void Init(Transform character, Transform camera)
         {
             m_CharacterTargetRot = character.localRotation;

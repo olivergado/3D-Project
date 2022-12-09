@@ -73,6 +73,7 @@ namespace Q3Movement
 
             m_CamTran = m_Camera.transform;
             m_MouseLook.Init(m_Tran, m_CamTran);
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void Update()
@@ -80,7 +81,7 @@ namespace Q3Movement
 
             
             m_MoveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-            m_MouseLook.UpdateCursorLock();    
+            //m_MouseLook.UpdateCursorLock();    
             QueueJump();
 
             // Set movement state.
